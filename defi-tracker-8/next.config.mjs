@@ -21,12 +21,15 @@ const nextConfig = {
   },
   images: {
     unoptimized: true,
+    domains: ['localhost'],
   },
   experimental: {
     webpackBuildWorker: true,
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
+  output: 'standalone',
+  poweredByHeader: false,
 }
 
 if (userConfig) {
